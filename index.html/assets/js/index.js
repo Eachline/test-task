@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
       let scrollDistance = window.scrollY;
       mainChildren.forEach((item) => {
          let searchItemClass = item.classList.contains('mission');
-         let onesPlut = item.clientWidth;
-         console.log(onesPlut);
-         if (searchItemClass && onesPlut > 1200) {
+         let itemWidth = item.clientWidth;
+         console.log(itemWidth);
+         if (searchItemClass && itemWidth > 1200) {
             let itemNode = item;
             let itemHeight = itemNode.clientHeight / 2;
             let itemTop = itemNode.offsetTop;
